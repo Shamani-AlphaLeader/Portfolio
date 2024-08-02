@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(fonts/Comfortaa-Regular.ttf);
+}
+
+:root {
+    --cinza-shamanis: #3c3c3c;
+    --vermelho-shamanis: #fa1e4a;
+}
+
+h2 {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-family: "Comfortaa";
+    font-size: 35px;
+}
+
+.container-grid {
+    color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Rajdhani";
+    font-size: 35px;
+
+}
+.container-grid2 p {
+    color: whitesmoke;
+    display: flex;
+    justify-content: left;
+    font-family: "Comfortaa";
+    font-size: 35px;
+
+}
