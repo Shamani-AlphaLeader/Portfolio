@@ -1,34 +1,131 @@
-@font-face {
-    font-family: "Comfortaa";
-    src: url(fonts/Comfortaa-Regular.ttf);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root {
-    --cinza-shamanis: #3c3c3c;
-    --vermelho-shamanis: #fa1e4a;
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    background-image: url(img/Cyber\ Fundo.png);
+    line-height: 1.6;
 }
 
-h2 {
-    color: whitesmoke;
+header {
     display: flex;
     justify-content: center;
-    font-family: "Comfortaa";
-    font-size: 35px;
+    background: none;
+    padding: 20px;
+    border-bottom: 2px solid #fa1e4a;
 }
 
-.container-grid {
-    color: whitesmoke;
+header .container {
     display: flex;
-    justify-content: flex-start;
-    font-family: "Rajdhani";
-    font-size: 35px;
-
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
-.container-grid2 p {
-    color: whitesmoke;
-    display: flex;
-    justify-content: left;
-    font-family: "Comfortaa";
-    font-size: 35px;
 
+header .photo {
+    flex: 1;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+header .photo img {
+    width: 100%;
+    border-radius: 10%;
+    border: 2px solid #fa1e4a;
+}
+
+header .info {
+    flex: 3;
+}
+
+header .info h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    color: #fa1e4a;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 20px 0;
+    border-bottom: 1px solid #fa1e4a;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-family: 'Comfortaa', sans-serif;
+    color: #fa1e4a;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fa1e4a;
+    text-decoration: none;
+}
+
+footer {
+    background: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #fa1e4a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .photo {
+        margin-bottom: 20px;
+    }
+
+    header .info {
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
